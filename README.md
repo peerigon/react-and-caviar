@@ -1,2 +1,2 @@
-# reactAndCaviar
-hackathon am 10.03? 
+# React and Caviar
+Hackathon am 10.03!
