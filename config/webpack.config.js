@@ -1,9 +1,14 @@
 "use strict";
 
 var path = require("path");
+var webpack = require("webpack");
 
 module.exports = {
-    entry: path.resolve(__dirname, "../client/app.js"),
+    entry: [
+        'webpack-dev-server/client?http://localhost:8080',
+        'webpack/hot/only-dev-server',
+        path.resolve(__dirname, "../client/app.jsx")
+    ],
     output: {
         path: path.resolve(__dirname, "../public/assets"),
         publicPath: "assets",
@@ -16,8 +21,12 @@ module.exports = {
         loaders: [
             {
                 test: /\.jsx$/,
-                loader: "jsx?harmony"
+                loader: "react-hot!jsx?harmony"
             }
         ]
-    }
+    },
+    plugins: [
+      new webpack.HotModuleReplacementPlugin(),
+      new webpack.NoErrorsPlugin()
+    ]
 };

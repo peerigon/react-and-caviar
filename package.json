@@ -4,7 +4,7 @@
   "description": "Hackathon am 10.03!",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack.config.js --content-base public",
+    "start": "webpack-dev-server --config config/webpack.config.js --content-base public --hot",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "jsx-loader": "^0.12.2",
+    "react-hot-loader": "^1.2.1",
     "webpack": "^1.7.2",
     "webpack-dev-server": "^1.7.0"
   }
