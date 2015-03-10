@@ -1,0 +1,24 @@
+{
+  "name": "react-and-caviar",
+  "version": "1.0.0",
+  "description": "Hackathon am 10.03!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peerigon/react-and-caviar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peerigon/react-and-caviar/issues"
+  },
+  "homepage": "https://github.com/peerigon/react-and-caviar",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "react": "^0.12.2",
+    "webpack": "^1.7.2"
+  }
+}
