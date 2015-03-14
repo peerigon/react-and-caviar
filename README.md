@@ -1,7 +1,7 @@
 # React and Caviar
 ## Hackathons
 - 10.03 :white_check_mark:
-- next: 16.03 :question:
+- next: 16.03
 
 ## Sources
 
