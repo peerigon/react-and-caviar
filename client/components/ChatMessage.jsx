@@ -1,4 +1,6 @@
-var React = require("react");
+'use strict';
+
+var React = require('react');
 var moment = require('moment');
 moment.locale('de');
 

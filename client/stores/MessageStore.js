@@ -10,8 +10,8 @@ var MessageStore = new EventEmitter();
 
 
 handlers[messageConstants.SEND] = function (action) {
-    messages['temp-'+action.ticketID] = {
-        id: 'temp-'+action.ticketID,
+    messages['temp-' + action.ticketID] = {
+        id: 'temp-' + action.ticketID,
         text: action.text,
         timestamp: action.timestamp
     };
@@ -19,23 +19,23 @@ handlers[messageConstants.SEND] = function (action) {
 };
 
 handlers[messageConstants.DELIVERED] = function (action) {
-    var message = messages['temp-'+action.ticketID];
+    var message = messages['temp-' + action.ticketID];
     message.id = action.id;
-    delete messages['temp-'+action.ticketID];
+    delete messages['temp-' + action.ticketID];
     messages[action.id] = message;
 
     MessageStore.emit(MessageStore.EVENTS.CHANGE);
 };
 
 MessageStore.EVENTS = {
-    CHANGE: "change"
+    CHANGE: 'change'
 };
 
 MessageStore.getAll = function() {
     return Object.keys(messages).map(function(key) {
         return messages[key];
     });
-}
+};
 
 MessageStore.dispatchToken = AppDispatcher.register(function (action) {
     var handler = handlers[action.actionType];

@@ -1,5 +1,7 @@
-var React = require("react");
-var ChatMessage = require("./ChatMessage.jsx");
+'use strict';
+
+var React = require('react');
+var ChatMessage = require('./ChatMessage.jsx');
 
 var ChatHistory = React.createClass({
     render: function () {

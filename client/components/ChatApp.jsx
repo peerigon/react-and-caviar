@@ -1,5 +1,7 @@
-var React = require("react");
-var ChatHistory = require("./ChatHistory.jsx");
+'use strict';
+
+var React = require('react');
+var ChatHistory = require('./ChatHistory.jsx');
 var MessageStore = require('../stores/MessageStore');
 var MessageInput = require('./MessageInput.jsx');
 

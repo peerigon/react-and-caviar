@@ -1,4 +1,6 @@
-var React = require("react");
+'use strict';
+
+var React = require('react');
 var MessageActions = require('../actions/message');
 
 var ENTER_KEY_CODE = 13;
@@ -21,7 +23,7 @@ var MessageInput = React.createClass({
 
     _submit: function(text) {
         MessageActions.sendMessage(text);
-        this.refs.input.getDOMNode().value = "";
+        this.refs.input.getDOMNode().value = '';
     }
 
 });

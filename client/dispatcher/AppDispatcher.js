@@ -1,5 +1,5 @@
-"use strict";
+'use strict';
 
-var flux = require("flux");
+var flux = require('flux');
 
 module.exports = new flux.Dispatcher();

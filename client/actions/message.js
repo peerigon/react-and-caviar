@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var AppDispatcher = require('../dispatcher/AppDispatcher');
 var socket = require('../utils/socket');
@@ -24,7 +24,7 @@ exports.sendMessage = function (text) {
         timestamp: timestamp,
         ticketID: ticketID
     });
-}
+};
 
 exports.messageDelivered = function(ticketID, id) {
     AppDispatcher.dispatch({
@@ -32,4 +32,4 @@ exports.messageDelivered = function(ticketID, id) {
         ticketID: ticketID,
         id: id
     });
-}
+};
